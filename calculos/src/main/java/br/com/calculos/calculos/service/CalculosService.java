@@ -1,5 +1,7 @@
 package br.com.calculos.calculos.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import br.com.calculos.calculos.entity.Entrada;
@@ -25,5 +27,19 @@ public class CalculosService {
             return resultado;
         
     }
+
+    public int somar(List<Integer> lista) {
+        int soma = 0;
+
+        for (int i = 0; i<lista.size(); i++){
+            
+            soma += lista.get(i);
+        }
+
+        return soma;
+        
+    }
+
+
 
 }
